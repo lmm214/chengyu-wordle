@@ -815,7 +815,6 @@ export function App() {
           </button>
           <span>
             <h1>{t('app.title')}</h1>
-            <CurrentPlaying />
           </span>
           <button
             type="button"
