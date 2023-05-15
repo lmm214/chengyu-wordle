@@ -25,7 +25,7 @@ import BackspaceIcon from './components/BackspaceIcon';
 import CloseIcon from './components/CloseIcon';
 import CodeInput from './components/CodeInput';
 import Countdown from './components/Countdown';
-//import CurrentPlaying from './components/CurrentPlaying';
+import CurrentPlaying from './components/CurrentPlaying';
 import FacebookIcon from './components/FacebookIcon';
 import InfoIcon from './components/InfoIcon';
 import KebabIcon from './components/KebabIcon';
