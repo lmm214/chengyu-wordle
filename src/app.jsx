@@ -389,9 +389,9 @@ export function App() {
     }
   }, [boardStates]);
 
-//  const [definition, setDefinition] = useState(null);
-//  useEffect(() => {
-//    setDefinition(null);
+  const [definition, setDefinition] = useState(null);
+  useEffect(() => {
+    setDefinition(null);
 //    fetch(
 //      `https://baidu-hanyu-idiom.cheeaun.workers.dev/?wd=${currentGame.idiom}`,
 //    )
@@ -402,7 +402,7 @@ export function App() {
 //        }
 //      })
 //      .catch(() => {});
-//  }, [currentGame.idiom]);
+  }, [currentGame.idiom]);
 
   const currentStep = board?.findIndex((row) => row.s === false) || 0;
 
