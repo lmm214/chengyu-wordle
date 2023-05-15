@@ -389,20 +389,20 @@ export function App() {
     }
   }, [boardStates]);
 
-  const [definition, setDefinition] = useState(null);
-  useEffect(() => {
-    setDefinition(null);
-    fetch(
-      `https://baidu-hanyu-idiom.cheeaun.workers.dev/?wd=${currentGame.idiom}`,
-    )
-      .then((r) => r.json())
-      .then((r) => {
-        if (r.definition) {
-          setDefinition(r.definition);
-        }
-      })
-      .catch(() => {});
-  }, [currentGame.idiom]);
+//  const [definition, setDefinition] = useState(null);
+//  useEffect(() => {
+//    setDefinition(null);
+//    fetch(
+//      `https://baidu-hanyu-idiom.cheeaun.workers.dev/?wd=${currentGame.idiom}`,
+//    )
+//      .then((r) => r.json())
+//      .then((r) => {
+//        if (r.definition) {
+//          setDefinition(r.definition);
+//        }
+//      })
+//      .catch(() => {});
+//  }, [currentGame.idiom]);
 
   const currentStep = board?.findIndex((row) => row.s === false) || 0;
 
